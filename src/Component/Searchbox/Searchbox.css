@@ -1,0 +1,72 @@
+.search-container {
+    max-width: 950px;
+    /* margin: auto; */
+    /* padding-right: 10px; */
+}
+.search {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 150px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+    float: right;
+}
+.search:focus {
+    width: 200px;
+}
+.search:focus ~ button {
+    display:none;
+}
+
+
+/* Searchbox.css */
+/* Các lớp CSS cho container chứa kết quả */
+.dropdown-list {
+  display: flex;
+  flex-direction: column; /* Thay đổi hướng hiển thị của các phần tử từ hàng ngang thành cột dọc */
+  max-height: 500px;
+  overflow-y: hidden;
+  position: absolute; 
+  width: 100%;
+  background-color: #fff; 
+  z-index: 1; 
+  top: 100%; 
+  left: 0; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 8px; 
+  box-sizing: border-box; 
+  background-color: #363a3ebb;
+  color: white;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  flex-basis: 25%;
+  margin-bottom: 8px; /* Thêm khoảng cách giữa các kết quả trong dropdown */
+}
+
+.result-item-title{
+  margin-top: 12px;
+}
+
+
+.result-item-image {
+  max-width: 50px; /* Giới hạn độ rộng của hình ảnh là 50px */
+  margin-right: 8px;
+}
+
+
+@media (max-width: 800px) {
+  .result-item {
+    flex-basis: 100%; /* Giảm độ rộng của mỗi kết quả xuống còn 100% */
+  }
+
+  .result-item-image {
+    max-width: 20px; /* Giảm độ rộng của hình ảnh xuống còn 20px */
+    margin-right: 2px; /* Giảm khoảng cách giữa hình ảnh và nội dung xuống còn 2px */
+  }
+}

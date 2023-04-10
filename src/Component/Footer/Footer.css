@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0%;
+  }
+  footer{
+    width: 100%;
+    position: absolute;
+    background-color: #353c44;
+    color: var(--textColor);
+    padding: 20px 0 30px;
+    font-size: 13px;
+    line-height: 12px;
+  }
+  .row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .col{
+    flex-basis: 25%;
+    line-height: 30px;
+  }
+  .logo{
+    width: 60px;
+    color: var(--textColor);
+    padding:auto;
+    margin-bottom: 30px;
+  }
+  .col h2{
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .col p{
+    color: lightgray;
+    padding-right: 50px;
+  }
+  .underline{
+    display: flex;
+    position: relative;
+    padding-top: 10px;
+  }
+  .underline::before {
+    content: "";
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--secondaryColor);
+    transition: 0.5s ease-out;
+  }
+  .underline:hover::before{
+    width: 100%;
+  }
+  .social_media{
+    width: 80%;
+    padding: 5px 15px 0px 0px;
+    text-align: center;
+    flex-direction: row;
+    margin-left: 10px;
+  }
+  .social_media h1 {
+    display: inline-block;  
+    padding-right: 10px; 
+    padding-top: 5px ;
+    width: 20%;
+    color: lightgray;
+  }
+  :root{
+    --mainColor: #0c1330;
+    --mainColorLight:#5466ae;
+    --secondaryColor: #b41162;
+    --textColor: #eee;
+    --buttonColor: #6fb16b;
+  }
+  .copyrightText{
+    width: 100%;
+    background-color: #353c44;
+    padding: 8px 100px;
+    text-align: center;
+    color: lightgrey;
+  }
+  @media (max-width:800px){
+    .row{
+      flex-direction: column;
+      margin: auto;
+    }
+    .social_media{
+      padding-top: 20px;
+    }
+    .underline{
+      display: flex;
+      padding-top: 15px;
+      padding-bottom: 2px;
+    }
+  }

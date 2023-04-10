@@ -1,0 +1,42 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap');  */
+
+
+
+body{
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+  
+.container{
+    background-color: #212529;
+    color: darkgray;
+    padding: 30px 20px 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card-body{
+    background-color: #212529;
+
+}
+  
+.grid{
+    display: grid;
+    margin-left: .5px;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0.2em;
+    justify-content: center;
+  }
+  
+h2{
+   text-decoration: none;
+    padding-top: 15px ;
+} 
+h6{
+    text-decoration: none;
+}
+

@@ -1,0 +1,33 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+:root{
+    --color-white: rgb(220, 218, 218);
+    /* --color-background: rgb(17, 17, 17); */
+}
+
+.App{
+    background-color: #212529;;
+}
+
+.input_space{
+    margin-bottom: 10px;
+}
+
+input{
+    height: 30px;
+    width: 20%;
+    font-size: 18px;
+}
+
+button{
+    height: 30px;
+    width: 100px;
+    background-color: blueviolet;
+    border: none;
+}

@@ -1,0 +1,60 @@
+.MoviesRowContaint{
+    background-color: #212529;
+    color: white;
+    padding: 20px 20px 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.heading {
+    font-size: 30px;
+    user-select: none;
+}
+
+.MovieSlider{
+    display: grid;
+    grid-template-columns: repeat(5, 4fr);
+    row-gap: 30px;
+    column-gap: 20px;
+    margin-top: 15px;
+}
+
+
+.movieItem {
+    transform: scale(1);
+    max-width: 400px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+    user-select: none;
+    overflow: hidden;
+    border-radius: 6px;
+    transform: center left;
+    position: relative;
+}
+
+.movieItem:hover{
+    transform: scale(1.1);
+    z-index: 10;
+    opacity: 1;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movieName{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 4px;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+

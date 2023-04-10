@@ -1,0 +1,91 @@
+.containerIntro{
+    background-color: transparent;
+    position: relative;
+    color: var(--color-white);
+    padding-top: 56%;
+}
+
+.videoIntro{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.infoIntro{
+    position: absolute;
+    top: 140px;
+    left: 12px;
+}
+
+.titleIntro{
+    font-size: 60px;
+    transition: all 0.3s ease;
+
+}
+
+.textIntro{
+    max-width: 550px;
+    width: 100%;
+    line-height: 1.3;
+    padding-top: 25px;
+    font-size: 18px;
+}
+
+.volumeIntro{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 10%;
+    top: 50%;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 6px;
+    color: #bbb;
+    border: 1px solid #fff; 
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.volumeIntro:hover{
+    color: #fff;
+    transform: scale(1.2);
+    background-color: rgba(211, 211, 211, 0.18);
+}
+
+
+@media screen and (max-width: 800px){
+    .containerIntro{
+        top: 120px;
+        left: 25px;
+    }
+    
+    .videoIntro{
+        top: 120px;
+        left: 25px;
+    }
+    
+    .infoIntro{
+        top: 120px;
+        left: 25px;
+    }
+
+    .titleIntro{
+        font-size: 40px;
+        transition: all 0.3s ease;
+        
+    }
+
+    .textIntro{
+        max-width: 550px;
+        width: 100%;
+        line-height: 1.3;
+        padding-top: 25px;
+        font-size: 16px;
+    }
+
+    .volumeIntro:hover{
+        height: 30px;
+        width: 30px;
+        padding: 4px;
+    }
+}
